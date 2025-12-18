@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Films</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">My Portfolio</h1>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="posters.html">Posters</a></li>
+                <li><a href="films.html" class="active">Films</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="content">
+        <div class="page-header">
+            <h1>Short Films</h1>
+            <p>My cinematic projects</p>
+        </div>
+
+        <div class="carousel">
+            <button class="carousel-btn prev" onclick="moveCarousel(-1)">‹</button>
+            
+            <div class="carousel-container">
+                <div class="carousel-item active">
+                    <div class="carousel-image"></div>
+                    <div class="carousel-caption">
+                        <h3>Film Title 1</h3>
+                        <p>Film description and details</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image"></div>
+                    <div class="carousel-caption">
+                        <h3>Film Title 2</h3>
+                        <p>Film description and details</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image"></div>
+                    <div class="carousel-caption">
+                        <h3>Film Title 3</h3>
+                        <p>Film description and details</p>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-btn next" onclick="moveCarousel(1)">›</button>
+        </div>
+
+        <div class="carousel-indicators">
+            <span class="indicator active" onclick="goToSlide(0)"></span>
+            <span class="indicator" onclick="goToSlide(1)"></span>
+            <span class="indicator" onclick="goToSlide(2)"></span>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
